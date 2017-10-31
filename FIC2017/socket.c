@@ -5,7 +5,7 @@
 #include <string.h>
 #include <unistd.h>
 
-void misca_din_buric(int sock, char *buf) {
+void move(int sock, char *buf) {
 	int n;
 	char aux[5];
 	while(buf[0] != '\0') {	
@@ -57,7 +57,7 @@ int main(int argc, char *argv[]) {
    	printf("Please enter the message: ");
    	bzero(buffer,256);
    	fgets(buffer,255,stdin);
-  	misca_din_buric(sockfd,buffer); 
+  	move(sockfd,buffer); 
 	
    	return 0;
 }
