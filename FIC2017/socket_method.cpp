@@ -64,6 +64,6 @@ void sendCommand(char *hostname,char *server_s,int portno)
 }
 int main(int argc, char *argv[])
 {
-  sendCommand(argv[0],argv[1],argv[2]);
+  sendCommand(argv[0],argv[1],atoi(argv[2]));
    	return 0;
 }
